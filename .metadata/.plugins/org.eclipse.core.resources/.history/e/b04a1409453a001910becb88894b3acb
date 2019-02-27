@@ -1,0 +1,5 @@
+package com.babbyunplugged.example.controller;
+
+public class WebController {
+
+}
