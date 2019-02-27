@@ -1,0 +1,5 @@
+package com.babbyunplugged.example.entity;
+
+public class User {
+
+}

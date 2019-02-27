@@ -6,17 +6,5 @@
 </head>
 <body>
     <p th:text="'Hello, ' + ${name} + '!'" />
-    <table>
-    	<tr>
-    		<th>Name</th>
-    		<th>Email</th>
-    		<th>Country</th>
-    	</tr>
-    	<tr>
-    		<td th:text="${user.name}"></td>
-    		<td th:text="${user.email}"></td>
-    		<td th:text="${user.country}"></td>
-    	</tr>
-    </table>
 </body>
 </html>

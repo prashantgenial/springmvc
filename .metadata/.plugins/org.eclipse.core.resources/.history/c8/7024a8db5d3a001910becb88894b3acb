@@ -14,8 +14,8 @@
     	</tr>
     	<tr>
     		<td th:text="${user.name}"></td>
-    		<td th:text="${user.email}"></td>
-    		<td th:text="${user.country}"></td>
+    		<td th:text="${user.getEmail()}"></td>
+    		<td>${user.getCountry()}</td>
     	</tr>
     </table>
 </body>
