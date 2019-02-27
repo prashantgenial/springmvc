@@ -3,7 +3,7 @@ package com.babbyunplugged.example.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -17,15 +17,6 @@ public class WebController {
 	@ResponseBody
 	public String test() {
 		return "hello";
-	}
-	
-	/*
-	 * Using path variable
-	 */
-	@GetMapping("/hello/{name}")
-	@ResponseBody
-	public String usingPathVariable(@PathVariable("name") String name) {
-		return "hello,"+name;
 	}
 	
 	/*method accepting a request parameter and passing parameter to template greeting.html

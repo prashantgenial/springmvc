@@ -25,7 +25,7 @@ public class WebController {
 	@GetMapping("/hello/{name}")
 	@ResponseBody
 	public String usingPathVariable(@PathVariable("name") String name) {
-		return "hello,"+name;
+		return "hello"+name;
 	}
 	
 	/*method accepting a request parameter and passing parameter to template greeting.html

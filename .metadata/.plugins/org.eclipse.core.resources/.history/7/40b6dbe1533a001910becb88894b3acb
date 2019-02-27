@@ -19,13 +19,10 @@ public class WebController {
 		return "hello";
 	}
 	
-	/*
-	 * Using path variable
-	 */
 	@GetMapping("/hello/{name}")
 	@ResponseBody
 	public String usingPathVariable(@PathVariable("name") String name) {
-		return "hello,"+name;
+		return "hello";
 	}
 	
 	/*method accepting a request parameter and passing parameter to template greeting.html
