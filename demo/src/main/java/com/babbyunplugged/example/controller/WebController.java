@@ -1,5 +1,8 @@
 package com.babbyunplugged.example.controller;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Controller;
@@ -48,9 +51,9 @@ public class WebController {
 	 */
 	@GetMapping("/greeting")
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-		User user = new User(name,"prashantgenial@gmail.com","INDIA");
+		List<User> users = Arrays.asList(new User(name,"prashantgenial@gmail.com","INDIA"),new User("Amit Gupta","amit.gupta@gmail.com","USA"),new User("Rahul Gupta","rahulg@gmail.com","INDIA"));
         model.addAttribute("name", name);
-        model.addAttribute("user", user);
+        model.addAttribute("users", users);
         return "greeting";
     }
 }
